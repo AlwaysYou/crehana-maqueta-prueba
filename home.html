@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Crehana | Home</title>
+	<link rel="stylesheet" type="text/css" href="css/s1.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+	<!-- endfornts -->
+
+	<!-- Slider -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+	<!-- endSlider -->
+
+	<!-- jquery -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+	<!-- endjquery -->
+	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/1013ff8fbd/UntitledProject/style-svg.css">
+	<script defer src="https://i.icomoon.io/public/temp/1013ff8fbd/UntitledProject/svgxuse.js">
+	</script>
+</head>
+<body>
+	<header>
+		<div class="header_contenedor">
+			<!-- Hijo 1 -->
+			<img class="imagen-header" src="../img/logo-hans.png"  height="75px">
+			<!-- Hijo 2 -->
+			<div class="menu-wrapper">
+				<ul id="menu-header">
+					<li class="item-menu-header">Productos</li>
+					<li class="item-menu-header">Mi Carrito</li>
+					<input class="buscador" type="search" 
+					placeholder="Buscar Producto :)">
+					<svg class="icon icon-search" height="10px">
+					<use xlink:href="#icon-search"></use></svg>
+				</ul>
+			</div>
+			<div>
+			</div>
+		</div>
+	</header>
+
+	<section class="mas_buscados">
+		<div class="container mas_buscados__bloque">
+			<h2 class="titulo_home"> Los más buscados </h2>
+			<div class="items_productos slider_mas_buscados">
+				<div class="caja_producto">
+					<img src="http://bolsodemano.es/wp-content/uploads/2017/03/Antony-Morato-hombres-mochila-bandolera-mensajero-del-hombro-del-comprador-Negro-0-300x351.jpg" width="250px" height="250px">
+					<div class="titulo_producto">
+						<span>Cartera 1</span>
+					</div>
+				</div>
+				<div class="caja_producto">
+					<img  src="http://bolsodemano.es/wp-content/uploads/2017/03/Carbotti-diseador-de-cuero-3-del-color-del-bolso-del-bolso-de-mano-cuadrada-comprador-de-la-mujer-negro-0-300x351.jpg" width="250px" height="250px">
+					<div class="titulo_producto">
+						<span>Cartera 2</span>
+					</div>
+				</div>
+				<div class="caja_producto">
+					<img  src="http://bolsodemano.es/wp-content/uploads/2017/03/Carbotti-diseador-de-cuero-3-del-color-del-bolso-del-bolso-de-mano-cuadrada-comprador-de-la-mujer-negro-0-300x351.jpg" width="250px" height="250px">
+					<div class="titulo_producto">
+						<span>Cartera 3</span>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="css/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="css/js/mediaelement/mediaelement.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".slider_mas_buscados").bxSlider({
+			auto:true,
+			pager:false,
+			minSlides: 3,
+			maxSlides: 4,
+			slideWidth: 209,
+			slideMargin: 10,
+			moveSlides: 1,
+			mode:'horizontal'
+		});
+	});
+
+</script>
+</html>
